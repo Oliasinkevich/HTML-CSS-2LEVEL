@@ -16,11 +16,6 @@ body {
     font-family: 'Lato';
 }
 
-.top {
-    position: relative;
-    overflow: hidden;
-}
-
 .center {
     padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px);
@@ -30,7 +25,20 @@ a {
     text-decoration: none;
 }
 
-header {
+summary {
+    display: block;
+  }
+  
+    summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .top {
+    overflow: hidden;
+    position: relative;
+  }
+
+.header {
     background: #222222;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -66,40 +74,38 @@ header {
     fill: #F16D7F;
 }
 
-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.header__right {
     display: flex;
-    gap: 33px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
+    gap: 25px;
 }
 
-nav svg:hover {
+.header__right svg:hover {
     -webkit-filter: contrast(10%);
     filter: contrast(10%);
 }
 
-nav svg:active path {
-    fill: #F16D7F;
+.burger_menu {
+    margin-right: 17px;
 }
 
-.nav_menu_checkbox {
+#burger {
     position: absolute;
-    visibility: hidden;
     left: -9999999px;
+    visibility: hidden;
+}
+
+#burger:checked ~ .details_menu_box {
+    right: -232px;
 }
 
 .details_menu_box {
     background: #FFFFFF;
     padding: 32px;
     width: 232px;
-    /* height: 634px; */
     position: absolute;
     top: 75px;
-    right: -232px;
-    z-index: 1;
+    right: 160px;
     -webkit-transition: right 0.6s;
     -o-transition: right 0.6s;
     transition: right 0.6s;
@@ -107,10 +113,6 @@ nav svg:active path {
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-.nav_menu_checkbox:checked~.details_menu_box {
-    right: 0;
 }
 
 .details_menu_box_text {
@@ -133,6 +135,10 @@ nav svg:active path {
     color: #F16D7F;
 }
 
+.details_item_text:hover {
+    color: #6F6E6E;
+}
+
 .details_item_list {
     padding-top: 20px;
     padding-left: 22px;
@@ -140,11 +146,16 @@ nav svg:active path {
 }
 
 .details_item_list_text {
+    display: block;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
+}
+
+.details_item_list_text:hover {
+    color: #F16D7F;
 }
 
 main {
@@ -157,9 +168,6 @@ main {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-}
-
-main {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;

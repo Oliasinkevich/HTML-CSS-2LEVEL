@@ -12,14 +12,6 @@
         padding-right: calc(50% - 368px);
     }
 
-    nav {
-        gap: 25px;
-    }
-
-    .nav_account {
-        margin-right: 17px;
-    }
-
     .promo_heading {
         margin-left: 39px;
         font-size: 44px;

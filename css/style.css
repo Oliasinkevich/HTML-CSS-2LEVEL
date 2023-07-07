@@ -796,6 +796,15 @@ form input:focus {
   text-decoration: none;
   padding: 14px 56px 14px 23px;
 }
+.product_card__btn_item:hover {
+  background-color: #EF5B70;
+}
+.product_card__btn_item:hover svg path {
+  fill: #EAEAEA;
+}
+.product_card__btn_item:hover .product_card__btn_text {
+  color: #EAEAEA;
+}
 .product_card__btn_text {
   font-style: normal;
   font-weight: 400;

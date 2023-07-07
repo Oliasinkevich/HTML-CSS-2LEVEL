@@ -160,8 +160,20 @@
             gap: 23px;
             text-decoration: none;
             padding: 14px 56px 14px 23px;
+
+            &:hover {
+                background-color:#EF5B70;
+            }
+
+            &:hover svg path {
+                fill: #EAEAEA;
+            }
+
+            &:hover .product_card__btn_text {
+                color: #EAEAEA;
+            }
         }
-        
+
         &_text {
             font-style: normal;
             font-weight: 400;

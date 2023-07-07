@@ -12,8 +12,6 @@
         rel="stylesheet">
     <link rel="icon" href="./img/header_item1.png">
     <title>THE BRAND OF LUXERIOUS FASHION | Product</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
 </head>
@@ -88,38 +86,32 @@
                     </svg></a>
             </div>
         </header>
-        <div class="top-head center">
+        <div class="product_top-head center">
             <a href="#">
-                <h2 class="top-head__heading">NEW ARRIVALS</h2>
+                <h2 class="product_top-head__heading">NEW ARRIVALS</h2>
             </a>
-            <nav class="breadcrumbs">
-                <a href="#" class="breadcrumbs__link">HOME</a>
-                <span> / </span>
-                <a href="#" class="breadcrumbs__link">MEN</a>
-                <span> / </span>
-                <a href="#" class="breadcrumbs__link breadcrumbs__link_site">NEW ARRIVALS</a>
+            <nav class="product_breadcrumbs">
+                <ul class="product_breadcrumbs__ul">
+                    <li class="product_breadcrumbs__li"><a class="product_breadcrumbs__a" href="#">HOME</a></li>
+                    <li class="product_breadcrumbs__li"><a class="product_breadcrumbs__a" href="#">MEN</a></li>
+                    <li class="product_breadcrumbs__li"><a
+                            class="product_breadcrumbs__a product_breadcrumbs__a_selected" href="#">NEW ARRIVALS</a>
+                    </li>
+                </ul>
             </nav>
         </div>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner carousel-center">
-                <div class="carousel-item active">
-                    <img src="/img/carousel.png" class="d-block" alt="photo wirh girl">
-                </div>
-                <div class="carousel-item">
-                    <img src="/img/carousel.png" class="d-block" alt="photo wirh girl">
-                </div>
-                <div class="carousel-item">
-                    <img src="/img/carousel.png" class="d-block" alt="photo wirh girl">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <div class="product_carousel">
+            <button class="product_carousel__btn"><svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M21.6998 7.7499L13.9498 15.4999L21.6998 23.2499L20.1498 26.3499L9.2998 15.4999L20.1498 4.6499L21.6998 7.7499Z"
+                        fill="black" />
+                </svg></button>
+            <img src="img/carousel.png" alt="slide photo">
+            <button class="product_carousel__btn"> <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.2998 23.2499L17.0498 15.4999L9.2998 7.7499L10.8498 4.6499L21.6998 15.4999L10.8498 26.3499L9.2998 23.2499Z"
+                        fill="black" />
+                </svg></button>
         </div>
         <div class="product_card">
             <p class="product_card__category">WOMEN COLLECTION</p>
@@ -305,9 +297,6 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

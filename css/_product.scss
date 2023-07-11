@@ -11,7 +11,7 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 29px;
-        color: #EF5B70;
+        color: $productColorPink;
     }
 }
 
@@ -34,7 +34,7 @@
 
         &_selected {
             font-weight: 700;
-            color: #EF5B70;
+            color: $productColorPink;
         }
     }
 
@@ -57,7 +57,7 @@
         border: none;
 
         &:active svg path {
-            fill: #F16D7F;
+            fill: $siteColorPink;
         }
     }
 }
@@ -65,8 +65,8 @@
 .product_card {
     padding-top: 65px;
     padding-bottom: 65px;
-    margin-left: calc(50% - 570px);
-    margin-right: calc(50% - 570px);
+    margin-left: calc(50% - $widthSite/2);
+    margin-right: calc(50% - $widthSite/2);
     text-align: center;
     outline: 1px solid #EAEAEA;
     background-color: #FFFFFF;
@@ -79,13 +79,13 @@
         font-weight: 300;
         font-size: 14px;
         line-height: 17px;
-        color: #F16D7F;
+        color: $siteColorPink;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     &__line {
         display: block;
-        border-bottom: 3px solid #EF5B70;
+        border-bottom: 3px solid $productColorPink;
         margin-bottom: 12px;
         margin-left: calc(50% - 32px);
         margin-right: calc(50% - 32px);
@@ -117,7 +117,7 @@
         font-weight: 300;
         font-size: 24px;
         line-height: 29px;
-        color: #EF5B70;
+        color: $productColorPink;
         padding-bottom: 64px;
     }
 
@@ -145,7 +145,7 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 17px;
-            color: #6F6E6E;
+            color: $siteColorGrey;
         }
     }
 
@@ -162,7 +162,7 @@
             padding: 14px 56px 14px 23px;
 
             &:hover {
-                background-color:#EF5B70;
+                background-color:$productColorPink;
             }
 
             &:hover svg path {
@@ -179,7 +179,7 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
-            color: #F26376;
+            color: $btnColorPink;
         }
     }
 

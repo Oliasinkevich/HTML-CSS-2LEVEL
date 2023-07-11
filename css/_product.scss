@@ -31,17 +31,17 @@
         &:hover {
             font-weight: 700;
         }
-
-        &_selected {
-            font-weight: 700;
-            color: $productColorPink;
-        }
     }
 
     &__li:not(:last-child)::after {
         content: '/';
         padding-left: 8px;
         padding-right: 8px;
+    }
+
+    &__li:last-child .product_breadcrumbs__a {
+        font-weight: 700;
+        color: $productColorPink;
     }
 }
 
@@ -182,7 +182,6 @@
             color: $btnColorPink;
         }
     }
-
 }
 
 .store__product {

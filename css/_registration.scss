@@ -1,0 +1,109 @@
+.registration {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration-card {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+
+    &__name {
+        color: #222;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__form {
+        padding-left: 16px;
+        width: 360px;
+        height: 45px;
+        color: #B1B1B1;
+        font-family: Lato;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        box-sizing: border-box;
+    }
+
+    &__label {
+        padding-top: 10px;
+        padding-bottom: 12px;
+        display: flex;
+        gap: 20px;
+        color: $siteColorBlack;
+        font-family: Lato;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__instruction {
+        padding-top: 16px;
+        padding-bottom: 39px;
+        color: #B1B1B1;
+        font-family: Lato;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__btn {
+
+        &_text {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 167px;
+            height: 50px;
+            box-sizing: border-box;
+            color: #FFF;
+            font-family: Lato;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+            background-color: $siteColorPink;
+            padding: 16px 28px;
+
+            &:hover {
+                color: $siteColorPink;
+                background-color: #FFF;
+                border: 1px solid $siteColorPink;
+            }
+
+            &:hover svg path {
+                fill: $siteColorPink;
+            }
+        }
+    }
+
+    &__description_list {
+        list-style: none;
+    }
+
+    &__description_list::before {
+        content: url('../img/registration_list.svg');
+        margin-right: 23px;
+    }
+}
+
+.registration_right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    color: $siteColorBlack;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}

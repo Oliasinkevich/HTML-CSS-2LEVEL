@@ -1117,4 +1117,102 @@ summary::-webkit-details-marker {
   color: #F16D7F;
   background-color: #FFF;
   border: 1px solid #F16D7F;
+}
+
+.registration {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.registration-card {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.registration-card__name {
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration-card__form {
+  padding-left: 16px;
+  width: 360px;
+  height: 45px;
+  color: #B1B1B1;
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  box-sizing: border-box;
+}
+.registration-card__label {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  display: flex;
+  gap: 20px;
+  color: #000000;
+  font-family: Lato;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration-card__instruction {
+  padding-top: 16px;
+  padding-bottom: 39px;
+  color: #B1B1B1;
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration-card__btn_text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 167px;
+  height: 50px;
+  box-sizing: border-box;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  background-color: #F16D7F;
+  padding: 16px 28px;
+}
+.registration-card__btn_text:hover {
+  color: #F16D7F;
+  background-color: #FFF;
+  border: 1px solid #F16D7F;
+}
+.registration-card__btn_text:hover svg path {
+  fill: #F16D7F;
+}
+.registration-card__description_list {
+  list-style: none;
+}
+.registration-card__description_list::before {
+  content: url("../img/registration_list.svg");
+  margin-right: 23px;
+}
+
+.registration_right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  color: #000000;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }/*# sourceMappingURL=style.css.map */

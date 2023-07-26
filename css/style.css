@@ -782,6 +782,9 @@ summary::-webkit-details-marker {
 .filter[open] path {
   fill: #EF5B70;
 }
+.filter[open] .filter__summary {
+  padding-left: 16px;
+}
 .filter__item[open] .filter__heading {
   color: #EF5B70;
 }
@@ -789,7 +792,6 @@ summary::-webkit-details-marker {
   display: flex;
   align-items: center;
   gap: 11px;
-  padding-left: 16px;
 }
 .filter__head {
   font-style: normal;
@@ -911,11 +913,15 @@ summary::-webkit-details-marker {
   line-height: normal;
 }
 
-.cart {
+.cart-information {
   padding-top: 96px;
   padding-bottom: 128px;
+}
+
+.cart {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .cart_left-side {

@@ -1,8 +1,12 @@
-.cart {
+.cart-information {
     padding-top: 96px;
     padding-bottom: 128px;
+}
+
+.cart {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cart_left-side {

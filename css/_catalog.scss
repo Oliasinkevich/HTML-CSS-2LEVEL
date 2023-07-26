@@ -31,6 +31,10 @@
         fill: $productColorPink;
     }
 
+    &[open] .filter__summary {
+        padding-left: 16px;
+    }
+
     &__item[open] .filter__heading {
         color: $productColorPink;
     }
@@ -39,7 +43,6 @@
         display: flex;
         align-items: center;
         gap: 11px;
-        padding-left: 16px;
     }
 
     &__head {
